@@ -6,7 +6,7 @@ from datetime import datetime
 
 def application(environ, start_response):
     headers = [
-        ('Content-Type', 'text/plan; charset=utf8'),
+        ('Content-Type', 'text/plain; charset=utf8'),
     ]
     start_response('200 OK', headers)
 
