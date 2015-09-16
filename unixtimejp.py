@@ -11,5 +11,5 @@ def application(environ, start_response):
     start_response('200 OK', headers)
 
     now = datetime.now()
-    unixtime = time.mktime(now.timetuple())
+    unixtime = int(time.mktime(now.timetuple()))
     return str(unixtime).encode('utf8')
