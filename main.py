@@ -5,6 +5,7 @@ from datetime import datetime
 
 def app(environ, start_response):
     start_response('200 OK', [
+        ('Cache-Control', 'no-store'),
         ('Content-Type', 'text/plain; charset=utf8'),
         ('Content-Security-Policy', "default-src: none"),
         ('X-Content-Type-Options', 'nosniff'),
