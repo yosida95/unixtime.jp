@@ -1,7 +1,6 @@
 ---
-runtime: python37
+runtime: python310
 handlers:
   - url: /.*
     secure: optional
     script: auto
-...
