@@ -1,0 +1,7 @@
+#!include:.gitignore
+.gcloudignore
+
+.git
+.gitignore
+
+/setup.cfg
