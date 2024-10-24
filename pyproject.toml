@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools >= 61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unixtimejp"
+version = "0.0"
+description = "http://unixtime.jp/"
+readme = "README.rst"
+
+authors = [
+    {name = "Kohei YOSHIDA", email = "kohei.yoshida@gehirn.co.jp"},
+]
+
+requires-python = ">= 3.10"
+dependencies = []
+
+classifiers = [
+    "Programming Language :: Python",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
+]
+
+[project.urls]
+Repository = "https://github.com/yosida95/unixtime.jp"
+
+[project.optional-dependencies]
+dev = [
+    "black ~= 24.8.0",
+    "isort ~= 5.12",
+]
+
+[tool.black]
+line-length = 79
+target-version = ["py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 79
+force_grid_wrap = 2
+
+# https://github.com/PyCQA/isort/issues/2156
+# lines_before_imports = 1
+ensure_newline_before_comments = true
